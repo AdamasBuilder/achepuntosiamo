@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A che punto siamo? - Rassegna Teatrale | Granda Connect</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        :root {
+            --color-salvia: #6b8f70;
+            --color-navy: #1b244a;
+            --color-corallo: #e85d3a;
+            --color-slate-blue: #4b6280;
+        }
+        body {
+            background-color: var(--color-navy);
+            color: #ffffff;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+        .bg-navy { background-color: var(--color-navy); }
+        .bg-salvia { background-color: var(--color-salvia); }
+        .bg-corallo { background-color: var(--color-corallo); }
+        .bg-slate-blue { background-color: var(--color-slate-blue); }
+        
+        .text-salvia { color: var(--color-salvia); }
+        .text-corallo { color: var(--color-corallo); }
+        .text-slate-blue { color: var(--color-slate-blue); }
+        
+        .border-salvia { border-color: var(--color-salvia); }
+        .border-slate-blue { border-color: var(--color-slate-blue); }
+        
+        .btn-corallo {
+            background-color: var(--color-corallo);
+            color: #ffffff;
+            transition: all 0.2s ease;
+        }
+        .btn-corallo:hover {
+            opacity: 0.9;
+            transform: translateY(-1px);
+        }
+    </style>
+    <style>
+    </style>
+
+</head>
+<body class="min-h-screen flex flex-col justify-between">
+
+    <!-- Top Bar Partnership -->
+    <div class="bg-black/30 border-b border-slate-blue/40 py-2.5 px-6">
+        <div class="max-w-4xl mx-auto flex justify-between items-center text-xs text-slate-300">
+            <div class="flex items-center gap-2">
+                <span class="inline-block w-2 h-2 rounded-full bg-salvia animate-pulse"></span>
+                <span>Biglietteria Ufficiale in collaborazione con <strong>Granda Connect</strong></span>
+            </div>
+            <a href="https://grandaconnect.it" target="_blank" class="text-salvia hover:underline font-semibold flex items-center gap-1">
+                grandaconnect.it &rarr;
+            </a>
+        </div>
+    </div>
+
+    <!-- Header Principale -->
+    <header class="py-10 px-6 text-center border-b border-slate-blue/30 bg-navy">
+        <div class="max-w-4xl mx-auto flex flex-col items-center">
+            
+            <!-- Co-branding Header Badge -->
+            <div class="flex items-center justify-center gap-4 mb-6 bg-slate-blue/20 px-6 py-3 rounded-full border border-slate-blue/40">
+                <!-- SVG Icona Granda Connect -->
+                <div class="flex items-center gap-2">
+                    <svg class="w-6 h-6 text-salvia" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                    </svg>
+                    <span class="font-bold text-white text-sm tracking-wide">GRANDA <span class="text-salvia font-normal">CONNECT</span></span>
+                </div>
+                <span class="text-slate-blue font-bold text-xs">✕</span>
+                <span class="text-xs font-semibold text-slate-300 tracking-wider uppercase">Rassegna Teatrale</span>
+            </div>
+
+            <h1 class="text-4xl md:text-5xl font-black text-white tracking-tight mb-3">
+                A CHE PUNTO SIAMO?
+            </h1>
+            <p class="text-slate-300 max-w-xl text-base md:text-lg">
+                Calendario degli spettacoli e prevendita biglietti online per la rassegna teatrale a Carrù.
+            </p>
+        </div>
+    </header>
+
+    <!-- Lista Eventi -->
+    <main class="max-w-4xl mx-auto px-6 py-10 flex-grow w-full">
+        <div class="flex items-center justify-between mb-8 pb-3 border-b border-slate-blue/40">
+            <h2 class="text-xl font-bold text-white tracking-wide">Spettacoli in Programma</h2>
+            <span class="text-xs text-salvia font-semibold bg-salvia/10 px-3 py-1 rounded-full border border-salvia/20">Stagione 2026</span>
+        </div>
+
+        <div class="space-y-4">
+
+            <!-- EVENTO 1: Nui Dui (Sold Out) -->
+            <div class="bg-slate-blue/20 border border-slate-blue/40 rounded-2xl p-5 flex flex-col sm:flex-row items-center justify-between gap-5 transition hover:border-slate-blue/70">
+                <div class="flex items-center gap-4 w-full sm:w-auto">
+                    <!-- Icona Evento -->
+                    <div class="w-16 h-16 rounded-full bg-black flex-shrink-0 border-2 border-corallo flex items-center justify-center p-2 text-center shadow-lg">
+                        <div class="leading-none text-[9px] font-black tracking-tighter">
+                            <span class="block text-white">A CHE</span>
+                            <span class="block text-corallo">PUNTO</span>
+                            <span class="block text-white">SIAMO<span class="text-corallo">?</span></span>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="text-xs font-bold text-salvia uppercase tracking-wider block mb-0.5">Ven 6 Nov 2026 • 21:00 - 23:30</span>
+                        <h3 class="text-lg font-bold text-white leading-snug">SPETTACOLO "NUI DUI": PIPPO BESSONE E LUCA OCCELLI</h3>
+                    </div>
+                </div>
+                <div class="w-full sm:w-auto flex justify-end">
+                    <span class="w-full sm:w-auto text-center px-5 py-2.5 rounded-xl bg-slate-800 text-slate-400 border border-slate-700 text-sm font-bold cursor-not-allowed">
+                        Sold out
+                    </span>
+                </div>
+            </div>
+
+            <!-- EVENTO 2: Orso Tosco -->
+            <div class="bg-slate-blue/20 border border-slate-blue/40 rounded-2xl p-5 flex flex-col sm:flex-row items-center justify-between gap-5 transition hover:border-salvia/50">
+                <div class="flex items-center gap-4 w-full sm:w-auto">
+                    <div class="w-16 h-16 rounded-full bg-black flex-shrink-0 border-2 border-corallo flex items-center justify-center p-2 text-center shadow-lg">
+                        <div class="leading-none text-[9px] font-black tracking-tighter">
+                            <span class="block text-white">A CHE</span>
+                            <span class="block text-corallo">PUNTO</span>
+                            <span class="block text-white">SIAMO<span class="text-corallo">?</span></span>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="text-xs font-bold text-salvia uppercase tracking-wider block mb-0.5">Ven 13 Nov 2026 • 20:30 - 21:30</span>
+                        <h3 class="text-lg font-bold text-white leading-snug">LA PROVINCIA IN GIALLO: ORSO TOSCO A TEATRO</h3>
+                        <p class="text-xs text-slate-300 mt-1 flex items-center gap-1">
+                            <span>📍 Teatro Fratelli Vacchetti, Carrù (12061)</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="w-full sm:w-auto flex justify-end">
+                    <a href="https://www.tickettailor.com/events/nicolbono/2504770" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto text-center px-6 py-2.5 rounded-xl btn-corallo text-sm font-bold shadow-md">
+                        Select tickets
+                    </a>
+                </div>
+            </div>
+
+            <!-- EVENTO 3: Paolo Roversi -->
+            <div class="bg-slate-blue/20 border border-slate-blue/40 rounded-2xl p-5 flex flex-col sm:flex-row items-center justify-between gap-5 transition hover:border-salvia/50">
+                <div class="flex items-center gap-4 w-full sm:w-auto">
+                    <div class="w-16 h-16 rounded-full bg-black flex-shrink-0 border-2 border-corallo flex items-center justify-center p-2 text-center shadow-lg">
+                        <div class="leading-none text-[9px] font-black tracking-tighter">
+                            <span class="block text-white">A CHE</span>
+                            <span class="block text-corallo">PUNTO</span>
+                            <span class="block text-white">SIAMO<span class="text-corallo">?</span></span>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="text-xs font-bold text-salvia uppercase tracking-wider block mb-0.5">Ven 13 Nov 2026 • 21:30 - 22:30</span>
+                        <h3 class="text-lg font-bold text-white leading-snug">LA PROVINCIA IN GIALLO: PAOLO ROVERSI A TEATRO</h3>
+                        <p class="text-xs text-slate-300 mt-1 flex items-center gap-1">
+                            <span>📍 Teatro Fratelli Vacchetti, Carrù (12061)</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="w-full sm:w-auto flex justify-end">
+                    <a href="https://www.tickettailor.com/events/nicolbono/2504720" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto text-center px-6 py-2.5 rounded-xl btn-corallo text-sm font-bold shadow-md">
+                        Select tickets
+                    </a>
+                </div>
+            </div>
+
+            <!-- EVENTO 4: Tommy Cassi e Vittorio Pettinato -->
+            <div class="bg-slate-blue/20 border border-slate-blue/40 rounded-2xl p-5 flex flex-col sm:flex-row items-center justify-between gap-5 transition hover:border-salvia/50">
+                <div class="flex items-center gap-4 w-full sm:w-auto">
+                    <div class="w-16 h-16 rounded-full bg-black flex-shrink-0 border-2 border-corallo flex items-center justify-center p-2 text-center shadow-lg">
+                        <div class="leading-none text-[9px] font-black tracking-tighter">
+                            <span class="block text-white">A CHE</span>
+                            <span class="block text-corallo">PUNTO</span>
+                            <span class="block text-white">SIAMO<span class="text-corallo">?</span></span>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="text-xs font-bold text-salvia uppercase tracking-wider block mb-0.5">Ven 20 Nov 2026 • 21:00 - 23:00</span>
+                        <h3 class="text-lg font-bold text-white leading-snug">IL CORAGGIO DI ESSERE VISIBILI: TOMMY CASSI E VITTORIO PETTINATO</h3>
+                        <p class="text-xs text-slate-300 mt-1 flex items-center gap-1">
+                            <span>📍 Teatro Fratelli Vacchetti, Carrù (12061)</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="w-full sm:w-auto flex justify-end">
+                    <a href="https://www.tickettailor.com/events/nicolbono/2514017" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto text-center px-6 py-2.5 rounded-xl btn-corallo text-sm font-bold shadow-md">
+                        Select tickets
+                    </a>
+                </div>
+            </div>
+
+            <!-- EVENTO 5: Pierpaolo Capovilla -->
+            <div class="bg-slate-blue/20 border border-slate-blue/40 rounded-2xl p-5 flex flex-col sm:flex-row items-center justify-between gap-5 transition hover:border-salvia/50">
+                <div class="flex items-center gap-4 w-full sm:w-auto">
+                    <div class="w-16 h-16 rounded-full bg-black flex-shrink-0 border-2 border-corallo flex items-center justify-center p-2 text-center shadow-lg">
+                        <div class="leading-none text-[9px] font-black tracking-tighter">
+                            <span class="block text-white">A CHE</span>
+                            <span class="block text-corallo">PUNTO</span>
+                            <span class="block text-white">SIAMO<span class="text-corallo">?</span></span>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="text-xs font-bold text-salvia uppercase tracking-wider block mb-0.5">Sab 21 Nov 2026 • 21:00 - 23:00</span>
+                        <h3 class="text-lg font-bold text-white leading-snug">PIERPAOLO CAPOVILLA: RESTARE, PARTIRE O TORNARE? IL DILEMMA DELLA PROVINCIA</h3>
+                        <p class="text-xs text-slate-300 mt-1 flex items-center gap-1">
+                            <span>📍 Teatro Fratelli Vacchetti, Carrù (12061)</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="w-full sm:w-auto flex justify-end">
+                    <a href="https://www.tickettailor.com/events/nicolbono/2516256" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto text-center px-6 py-2.5 rounded-xl btn-corallo text-sm font-bold shadow-md">
+                        Select tickets
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-blue/30 py-8 px-6 bg-black/20 text-center text-xs text-slate-400">
+        <div class="max-w-4xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4">
+            <div>
+                <p class="font-semibold text-slate-300">Rassegna Teatrale "A che punto siamo?"</p>
+                <p class="text-slate-400 mt-0.5">Gestione biglietti diretta su Ticket Tailor</p>
+            </div>
+            <div class="flex items-center gap-2 bg-slate-blue/20 px-4 py-2 rounded-xl border border-slate-blue/30">
+                <span>Promosso da</span>
+                <a href="https://grandaconnect.it" target="_blank" class="text-salvia font-bold hover:underline">Granda Connect</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
