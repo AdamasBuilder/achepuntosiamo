@@ -41,11 +41,19 @@
         }
         /* da 640px in su larghezza e altezza fisse: nessun bottone piu' alto degli altri */
         @media (min-width: 640px) {
-            a.btn-corallo {
+            a.btn-corallo,
+            .btn-stato {
                 width: 176px;
                 height: 44px;
                 padding: 0;
             }
+        }
+        /* "Sold out" occupa lo stesso spazio del bottone attivo, cosi' la colonna resta allineata */
+        .btn-stato {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            white-space: nowrap;
         }
         .btn-corallo:hover {
             opacity: 0.9;
@@ -121,7 +129,7 @@
                     </div>
                 </div>
                 <div class="w-full sm:w-auto flex justify-end">
-                    <span class="w-full sm:w-auto text-center px-5 py-2.5 rounded-xl bg-slate-800 text-slate-400 border border-slate-700 text-sm font-bold cursor-not-allowed">
+                    <span class="w-full sm:w-auto text-center px-5 py-2.5 rounded-xl bg-slate-800 text-slate-400 border border-slate-700 text-sm font-bold cursor-not-allowed btn-stato">
                         Sold out
                     </span>
                 </div>
