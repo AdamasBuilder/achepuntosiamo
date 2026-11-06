@@ -33,13 +33,24 @@
             background-color: var(--color-corallo);
             color: #ffffff;
             transition: all 0.2s ease;
+            /* tutti i bottoni identici: testo su una riga sola, centrato */
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            white-space: nowrap;
+        }
+        /* da 640px in su larghezza e altezza fisse: nessun bottone piu' alto degli altri */
+        @media (min-width: 640px) {
+            a.btn-corallo {
+                width: 176px;
+                height: 44px;
+                padding: 0;
+            }
         }
         .btn-corallo:hover {
             opacity: 0.9;
             transform: translateY(-1px);
         }
-    </style>
-    <style>
     </style>
 
 </head>
